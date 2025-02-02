@@ -113,7 +113,12 @@ def generate_html():
     for asin in sorted(grouped.keys()):
         variants = grouped[asin]
         variants.sort(key=lambda x: x["country"].lower())
-        title = variants[0]["title"]
+        # Usa il titolo italiano se presente, altrimenti il primo titolo disponibile
+        italian_titles = [row["title"] for row in variants if row["country"].lower() == "it"]
+        if italian_titles:
+            title = italian_titles[0]
+        else:
+            title = variants[0]["title"]
 
         html += f"""        <div class="col">
           <div class="card h-100">
