@@ -3,8 +3,8 @@ import sqlite3
 import os
 
 # Percorso del database e file di output
-DB_FILE = "../offerid_tcg.sqlite3"  # oppure, se preferisci, il database TCG
-OUTPUT_DIR = "docs"
+DB_FILE = "/root/bot/offerid_tcg.sqlite3"  # oppure, se preferisci, il database TCG
+OUTPUT_DIR = "/root/bot/web/docs"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "index.html")
 
 # Mapping per emoji bandiere e per il dominio di Amazon:
