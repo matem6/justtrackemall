@@ -7,6 +7,8 @@ DB_FILE = "/root/bot/offerid_tcg.sqlite3"  # oppure, se preferisci, il database 
 OUTPUT_DIR = "/root/bot/web/docs"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "index.html")
 
+#aaa
+
 # Mapping per emoji bandiere e per il dominio di Amazon:
 FLAG_MAPPING = {
     "it": ("🇮🇹", "it"),
