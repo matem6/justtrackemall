@@ -2,7 +2,7 @@
 import sqlite3
 import os
 
-# Percorso del database e file di output
+# Percorso del database e file di output (test)
 DB_FILE = "/root/bot/offerid_tcg.sqlite3"  # oppure, se preferisci, il database TCG
 OUTPUT_DIR = "/root/bot/web/docs"
 OUTPUT_FILE = os.path.join(OUTPUT_DIR, "index.html")
